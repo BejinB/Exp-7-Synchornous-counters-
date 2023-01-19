@@ -106,3 +106,5 @@ end endmodule
 ![image](https://user-images.githubusercontent.com/118367518/213475329-0952c8bb-4b84-4f72-afc5-afb6cccf0aef.png)
 
 ### RESULTS 
+Hence the Four bit Up counter and Down counter is implemented successfully and its functionality is validated.
+
