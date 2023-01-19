@@ -85,6 +85,7 @@ end endmodule
 ### TRUTH TABLE 
 ![image](https://user-images.githubusercontent.com/118367518/213474463-94e7bc7a-484d-40d0-869e-5b5cee719d00.png)
 # Using Down-counter
+```
 module do_wn(clock,reset,downcounter);
 input clock,reset;
 output reg[3:0] downcounter;
@@ -95,6 +96,7 @@ downcounter=4'b 000;
 else
 downcounter=downcounter+1;
 end endmodule
+```
 ### RTL LOGIC DOWN COUNTER 
 ![image](https://user-images.githubusercontent.com/118367518/213475047-7d3c5076-ffb0-4cb8-bdff-b1d0e0fd503a.png)
 ### TIMING DIGRAMS FOR COUNTER  
