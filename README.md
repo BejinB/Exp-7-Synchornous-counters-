@@ -46,43 +46,61 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 4-bit Count Down Counter
 ### Procedure
-/* write all the steps invloved */
+1.Open a new project using Quartus II.
+2.Declare the inputs and outputs inside module projname().
+3.Set the reset value using register.
+4.Use commands like begin and end to stimulate the counter.
+5.For Up counter increment the count and for Down counter decrement the count.
+6.End the verilog programming.
 
 
 
 ### PROGRAM 
+# Using up-counter
+```
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: B.Bejin
+RegisterNumber: 22001908
+module up_c(clock,reset,upcounter);
+input clock,reset;
+output reg[2:0] upcounter;
+always@(posedge clock or posedge reset)
+begin
+if(reset)
+upcounter=3'b 000;
+else
+upcounter=upcounter+1;
+end endmodule
 */
+```
 
+### RTL LOGIC UP COUNTER 
 
-
-
-
-
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/118367518/213473946-5c38f6ab-2cca-4931-a916-204011cea2e3.png)
 
 ### TIMING DIGRAMS FOR COUNTER  
-
-
-
-
+![image](https://user-images.githubusercontent.com/118367518/213474344-b07d3acb-3bd6-4ef2-9e4b-c9ef5d15da85.png)
 
 ### TRUTH TABLE 
+![image](https://user-images.githubusercontent.com/118367518/213474463-94e7bc7a-484d-40d0-869e-5b5cee719d00.png)
+# Using Down-counter
+module do_wn(clock,reset,downcounter);
+input clock,reset;
+output reg[3:0] downcounter;
+always@(posedge clock or posedge reset)
+begin
+if(reset)
+downcounter=4'b 000;
+else
+downcounter=downcounter+1;
+end endmodule
+### RTL LOGIC DOWN COUNTER 
+![image](https://user-images.githubusercontent.com/118367518/213475047-7d3c5076-ffb0-4cb8-bdff-b1d0e0fd503a.png)
+### TIMING DIGRAMS FOR COUNTER  
 
-
-
-
-
+![image](https://user-images.githubusercontent.com/118367518/213475196-fc71b30f-9d13-4f2d-8024-ff4280b9f6e4.png)
+### TRUTH TABLE 
+![image](https://user-images.githubusercontent.com/118367518/213475329-0952c8bb-4b84-4f72-afc5-afb6cccf0aef.png)
 
 ### RESULTS 
